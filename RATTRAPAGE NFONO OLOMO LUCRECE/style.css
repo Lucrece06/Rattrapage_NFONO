@@ -1,0 +1,165 @@
+/* 🎨 Styles Globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #F4F7FC; /* Fond léger et moderne */
+    color: #2C3E50; /* Texte dans une couleur sobre et lisible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+/* 📦 Conteneur Principal */
+.container {
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Ombre plus douce et large */
+    padding: 40px;
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out; /* Animation d'apparition un peu plus douce */
+    margin-top: 20px;
+}
+
+/* 🔥 Animation d'apparition */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🏷️ Titres */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2C3E50; /* Titre élégant en gris foncé */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    border-bottom: 5px solid #E74C3C; /* Sous-ligne plus épaisse pour un effet plus marqué */
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #34495E; /* Gris plus clair pour les sous-titres */
+    margin-bottom: 25px;
+}
+
+/* 📩 Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="email"] {
+    padding: 16px;
+    border: 1px solid #BDC3C7; /* Bordure fine et claire */
+    border-radius: 10px; /* Coins un peu plus arrondis */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    background-color: #F4F7FC;
+    color: #2C3E50;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #E74C3C; /* Bordure en rouge doux quand on focus */
+    box-shadow: 0px 0px 12px rgba(231, 76, 60, 0.2);
+    outline: none;
+}
+
+/* ✅ Bouton Ajouter */
+button {
+    background-color: #E74C3C; /* Rouge bordeaux premium */
+    color: #FFFFFF;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px; /* Coins arrondis pour le bouton */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #C0392B; /* Effet de survol plus foncé */
+    transform: translateY(-5px); /* Effet d'élévation légèrement plus marqué */
+}
+
+/* 📋 Liste des contacts */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    text-align: left;
+    width: 100%;
+}
+
+li {
+    background-color: #ECF0F1; /* Fond doux pour chaque contact */
+    padding: 18px;
+    border-radius: 10px; /* Coins arrondis pour les éléments de la liste */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre un peu plus marquée pour un effet plus premium */
+    display: flex;
+    align-items: center; /* Alignement des éléments de la liste */
+    justify-content: space-between;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: #D5DBDB; /* Légère modification du fond au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Ombre plus marquée au survol */
+}
+
+/* 📷 Image de contact */
+li img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* 🔄 Animation pour la liste */
+li {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
